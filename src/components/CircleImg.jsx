@@ -4,7 +4,7 @@ function CircleImg(props) {
   const inlineStyle = {
     width: `${props.size}rem`,
     height: `${props.size}rem`,
-    backgroundImage: `url('../../public/${props.img}')`,
+    backgroundImage: `url('../../${props.img}')`,
   };
   return (
     <div
