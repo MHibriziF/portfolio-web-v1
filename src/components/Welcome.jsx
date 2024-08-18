@@ -2,7 +2,7 @@ import React from "react";
 
 function Welcome() {
   return (
-    <div className="flex w-full h-auto mt-11 justify-center text-teal-50">
+    <div className="flex w-full h-auto mt-32 justify-center text-teal-50">
       <div
         data-aos="zoom-in"
         data-aos-duration="1500"
