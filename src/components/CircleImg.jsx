@@ -9,7 +9,7 @@ function CircleImg(props) {
   return (
     <div
       style={inlineStyle}
-      className="bg-cover rounded-full border-solid border-4 ring-4 ring-slate-800 border-slate-700 my-4 mx-6 bg-black"
+      className="bg-contain bg-no-repeat bg-center rounded-full border-solid border-4 ring-4 ring-slate-800 border-slate-700 my-4 mx-6 bg-black"
     ></div>
   );
 }
