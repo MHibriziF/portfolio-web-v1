@@ -3,7 +3,7 @@ import Navlink from "./Navlink";
 
 function Navbar() {
   return (
-    <header className="backdrop-blur-sm bg-black/30 text-white font-poppins sticky top-0 ">
+    <header className="backdrop-blur-sm bg-black/30 text-white font-poppins sticky top-0 z-10">
       <nav className="p-5 md:flex md:items-center md:justify-between">
         <span className="text-2xl">
           <a href="#">m.h.f</a>

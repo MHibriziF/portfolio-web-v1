@@ -12,6 +12,11 @@ function App() {
     <>
       <Navbar />
       <Welcome />
+      <div className="flex justify-center my-36">
+        <CircleImg size="16" img="izi.jpg" />
+        <CircleImg size="16" img="makara-ui.png" />
+        <CircleImg size="16" img="compfest.jpeg" />
+      </div>
     </>
   );
 }
