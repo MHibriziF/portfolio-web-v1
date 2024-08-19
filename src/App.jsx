@@ -1,6 +1,7 @@
 import Navbar from "./components/navigation/Navbar";
 import Welcome from "./components/Welcome";
 import CircleImg from "./components/CircleImg";
+import About from "./components/About";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import "./styles/App.css";
@@ -12,6 +13,7 @@ function App() {
     <>
       <Navbar />
       <Welcome />
+      <About />
       <div className="flex flex-col justify-center my-36">
         <CircleImg size="small" img="izi.jpg" />
         <CircleImg size="medium" img="makara-ui.png" />
