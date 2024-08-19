@@ -11,18 +11,23 @@ export default {
       },
       keyframes: {
         float: {
-          "0%": { transform: "translateX(10px)" },
-          "10%": { transform: "translateY(13px)" },
-          "20%": { transform: "translateX(-10px)" },
-          "30%": { transform: "translateY(-13px)" },
-          "40%": { transform: "translateX(10px)" },
-          "50%": { transform: "translateY(13px)" },
-          "60%": { transform: "translateX(-10px)" },
-          "100%": { transform: "translateY(-13px)" },
+          "0%, 40%": { transform: "translateX(10px)" },
+          "10%, 50%": { transform: "translateY(13px)" },
+          "20%, 60%": { transform: "translateX(-10px)" },
+          "30%, 100%": { transform: "translateY(-13px)" },
+        },
+        "bounce-less": {
+          "0%, 100%": {
+            transform: "translateY(-15%)",
+          },
+          "50%": {
+            transform: "translateY(0)",
+          },
         },
       },
       animation: {
-        waving: "float 15s linear infinite",
+        floating: "float 15s linear infinite",
+        "bounce-slow": "bounce-less 10s linear infinite",
       },
     },
   },
