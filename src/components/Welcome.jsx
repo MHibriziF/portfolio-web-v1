@@ -19,7 +19,7 @@ function Welcome() {
           </p>
         </div>
         <div data-aos="fade-up" data-aos-duration="2000">
-          <h2 className="md:text-3xl text-lg hover:scale-125 hover:-rotate-3 hover:text-white transition">
+          <h2 className="md:text-3xl text-lg hover:scale-125 animate-rainbow-fast font-bold hover:-rotate-3 hover:text-white transition">
             Muhammad Hibrizi Farghana
           </h2>
         </div>

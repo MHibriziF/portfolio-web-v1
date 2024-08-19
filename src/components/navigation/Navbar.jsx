@@ -34,7 +34,7 @@ function Navbar() {
           className="md:flex md:peer-checked:flex peer-checked:inline hidden"
         >
           <Navlink text="Home" href="#" />
-          <Navlink text="About" href="#" />
+          <Navlink text="About" href="#about-me" />
           <Navlink text="Project" href="#" />
         </ul>
       </nav>
