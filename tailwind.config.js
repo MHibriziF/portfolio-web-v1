@@ -1,7 +1,13 @@
 /** @type {import('tailwindcss').Config} */
+
+const defaultTheme = require("tailwindcss/defaultTheme");
 export default {
   content: ["./index.html", "./src/**/*.{js,jsx}"],
   theme: {
+    screens: {
+      spc: "924px",
+      ...defaultTheme.screens,
+    },
     extend: {
       backgroundImage: {
         "axiom-pattern": "url('/src/assets/axiom-pattern.png')",

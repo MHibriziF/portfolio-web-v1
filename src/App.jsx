@@ -15,7 +15,6 @@ function App() {
       <Welcome />
       <About />
       <div className="flex flex-col justify-center my-36">
-        <CircleImg size="small" img="izi.jpg" />
         <CircleImg size="medium" img="makara-ui.png" />
         <CircleImg size="large" img="compfest.jpeg" />
       </div>

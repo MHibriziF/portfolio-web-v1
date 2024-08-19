@@ -6,7 +6,7 @@ function Welcome() {
       <div
         data-aos="zoom-in"
         data-aos-duration="1500"
-        className="flex flex-col justify-center font-poppins ring-1 ring-white animate-floating hover:shadow-xl hover:shadow-blue-500/50 items-center w-auto backdrop-blur-sm bg-white/25 rounded-xl md:px-36 md:py-16 px-12 py-8"
+        className="flex flex-col justify-center font-poppins ring-1 ring-white animate-floating hover:shadow-xl hover:shadow-blue-500/50 items-center w-auto backdrop-blur-sm bg-stone-100/25 rounded-xl md:px-36 md:py-16 px-12 py-8"
       >
         <div data-aos="fade-down" data-aos-duration="2000">
           <h1 className="md:text-6xl text-3xl pb-4 hover:scale-125 hover:text-white transition">
