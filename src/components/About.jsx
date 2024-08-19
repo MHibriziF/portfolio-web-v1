@@ -28,7 +28,7 @@ function About() {
               className="m-0 p-0"
             >
               <div className="flex items-center md:ml-4 md:w-[41rem] sm:w-[27rem] w-80 bg-gradient-to-r from-stone-700/75 via-stone-500/75 to-stone-800/75 hover:bg-stone-500 transition group rounded-3xl md:p-6 p-4 text-center h-auto">
-                <p className="font-poppins font-semibold md:text-xl sm:text-lg text-xs group-hover:font-bold transition">
+                <p className="font-poppins font-semibold md:text-xl sm:text-lg text-xs group-hover:font-bold transition-all">
                   I am currently pursuing my bachelor's degree in Information
                   System at Universitas Indonesia. I have a strong interest in
                   technology and loves to try new things. I also love watching
