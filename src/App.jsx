@@ -3,7 +3,7 @@ import Welcome from "./components/Welcome";
 import CircleImg from "./components/sub-components/CircleImg";
 import Projects from "./components/Projects";
 import About from "./components/About";
-import Contacts from "./components/Contacts";
+import Contacts from "./components/Socials";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import "./styles/App.css";

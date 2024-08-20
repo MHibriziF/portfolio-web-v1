@@ -8,7 +8,7 @@ function Projects() {
         <div
           data-aos="zoom-in"
           data-aos-duration="1500"
-          className="my-8 flex flex-col justify-center"
+          className="mt-16 flex flex-col justify-center"
         >
           <SmallTitle text="Projects" />
         </div>
@@ -16,9 +16,9 @@ function Projects() {
       <div
         data-aos="zoom-out"
         data-aos-duration="1500"
-        className="flex justify-center font-poppins text-white"
+        className="flex justify-center font-poppins text-slate-300"
       >
-        <h1 className="spc:text-6xl text-3xl hover:font-bold hover:text-slate-400 hover:scale-125 ring-2 transition-all">
+        <h1 className="spc:text-6xl text-3xl hover:font-bold hover:text-slate-400 hover:scale-125 transition-all">
           Coming soon...
         </h1>
       </div>
