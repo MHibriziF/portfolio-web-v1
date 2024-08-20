@@ -19,9 +19,13 @@ function App() {
       <About />
       <Projects />
       <Contacts />
-      <div className="flex flex-row justify-center my-20">
+      <div className="flex flex-col justify-center items-center my-20">
         <CircleImg size="large" img="heart.jpg" />
+        <h1 className="font-poppins font-bold text-white md:text-6xl text-3xl">
+          Thank you!
+        </h1>
       </div>
+
       <Footer />
     </>
   );
