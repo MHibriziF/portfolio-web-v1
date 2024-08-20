@@ -19,7 +19,7 @@ function Experience() {
                 Aug 2024 — Present
                 Gives assistance to students
                 Makes problems for students
-                Grades students homeworks"
+                Grades students' homeworks"
         />
         <Descriptor
           start="right"
