@@ -4,15 +4,19 @@ import SmallTitle from "./sub-components/SmallTitle";
 function Projects() {
   return (
     <>
-      <div className="pt-1 flex justify-center text-white mb-16">
-        <SmallTitle text="Projects" />
-      </div>
-      <div className="flex justify-center">
-        <div class="w-max">
-          <h1 class="animate-typing hover:scale-125 hover:text-slate-500 transition-all overflow-hidden whitespace-nowrap border-r-4 border-r-white pr-5 text-6xl text-white font-bold text-center">
-            Coming Soon...
-          </h1>
+      <section id="projects" className="pt-7 flex justify-center text-white">
+        <div
+          data-aos="zoom-in"
+          data-aos-duration="1500"
+          className="my-28 flex flex-col justify-center"
+        >
+          <SmallTitle text="Projects" />
         </div>
+      </section>
+      <div className="flex justify-center font-poppins text-white">
+        <h1 className="spc:text-6xl text-3xl hover:font-bold hover:text-slate-400 hover:scale-125 ring-2 transition-all">
+          Coming soon...
+        </h1>
       </div>
     </>
   );

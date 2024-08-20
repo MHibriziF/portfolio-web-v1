@@ -16,7 +16,7 @@ function App() {
       <Welcome />
       <About />
       <Projects />
-      <div className="flex flex-row justify-center my-36">
+      <div className="flex flex-row justify-center my-20">
         <CircleImg size="large" img="heart.jpg" />
       </div>
     </>

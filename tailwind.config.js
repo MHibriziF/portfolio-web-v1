@@ -35,30 +35,12 @@ export default {
           "75%": { color: "#6f00fe" },
           "100%": { color: "#ad0afd" },
         },
-        typing: {
-          "0%": {
-            width: "0%",
-            visibility: "hidden",
-          },
-          "100%": {
-            width: "100%",
-          },
-        },
-        blink: {
-          "50%": {
-            borderColor: "transparent",
-          },
-          "100%": {
-            borderColor: "white",
-          },
-        },
       },
       animation: {
         floating: "float 15s linear infinite",
         "bounce-slow": "bounce-less 10s linear infinite",
         rainbow: "rainbows 10s linear infinite",
         "rainbow-fast": "rainbows 5s linear infinite",
-        typing: "typing 2s steps(20) infinite alternate, blink .7s infinite",
       },
     },
   },
