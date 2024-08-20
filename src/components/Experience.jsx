@@ -4,7 +4,7 @@ import Descriptor from "./sub-components/Descriptor";
 
 function Experience() {
   return (
-    <section className="pt-1 flex justify-center text-white">
+    <section className="pt-1 flex justify-center text-white mb-20">
       <div
         className="w-full flex flex-col"
         data-aos="zoom-in"
