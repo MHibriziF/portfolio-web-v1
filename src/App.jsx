@@ -4,6 +4,7 @@ import CircleImg from "./components/sub-components/CircleImg";
 import Projects from "./components/Projects";
 import About from "./components/About";
 import Contacts from "./components/Socials";
+import Footer from "./components/Footer";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import "./styles/App.css";
@@ -21,6 +22,7 @@ function App() {
       <div className="flex flex-row justify-center my-20">
         <CircleImg size="large" img="heart.jpg" />
       </div>
+      <Footer />
     </>
   );
 }
