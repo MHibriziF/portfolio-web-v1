@@ -16,7 +16,7 @@ function Bulletpoint({ text, start }) {
         <p className="mr-4 inline-block text-right hover:font-semibold transition-all">
           {text}
         </p>
-        <div className="mr-4 rounded-full w-6 h-6 bg-slate-700 inline-block"></div>
+        <div className="spc:mr-4 rounded-full w-6 h-6 bg-slate-700 inline-block"></div>
       </>
     );
   }

@@ -1,5 +1,6 @@
 import React from "react";
 import Education from "./Education";
+import Experience from "./Experience";
 import SmallTitle from "./sub-components/SmallTitle";
 import CircleImg from "./sub-components/CircleImg";
 
@@ -40,6 +41,7 @@ function About() {
         </div>
       </section>
       <Education />
+      <Experience />
     </>
   );
 }
