@@ -16,9 +16,9 @@ function Projects() {
       <div
         data-aos="zoom-out"
         data-aos-duration="1500"
-        className="flex justify-center font-poppins text-slate-300"
+        className="flex justify-center font-poppins text-slate-300 mx-0 px-0"
       >
-        <h1 className="spc:text-6xl text-3xl hover:font-bold hover:text-slate-400 hover:scale-125 transition-all">
+        <h1 className="spc:text-6xl sm:text-3xl text-2xl hover:font-bold hover:text-slate-400 hover:scale-125 transition-all">
           Coming soon...
         </h1>
       </div>

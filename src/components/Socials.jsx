@@ -19,17 +19,11 @@ function Contacts() {
             img="../github.png"
             alt="github-logo"
           />
-          <a
+          <Icons
             href="https://www.linkedin.com/in/muhammad-hibrizi-farghana/"
-            target="_blank"
-            className="mx-4"
-          >
-            <img
-              src="../linkedin.png"
-              alt="linkedin-logo"
-              className="w-24 bg-white rounded-full hover:scale-75 hover:bg-slate-100 transition-all"
-            />
-          </a>
+            img="../linkedin.png"
+            alt="linkedin-logo"
+          />
           <Icons
             href="https://www.instagram.com/mhibrizifarghana/"
             img="../instagram.png"

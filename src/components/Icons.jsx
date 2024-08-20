@@ -6,7 +6,7 @@ function Icons({ href, img, alt }) {
       <img
         src={img}
         alt={alt}
-        className="w-24 bg-white rounded-full group-hover:scale-75 group-hover:bg-slate-100 transition-all"
+        className="md:w-24 w-16 bg-white rounded-full group-hover:scale-75 group-hover:bg-slate-100 transition-all"
       />
     </a>
   );
