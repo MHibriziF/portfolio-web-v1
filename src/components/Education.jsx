@@ -10,12 +10,14 @@ function Education() {
       <div className="w-full flex flex-col">
         <SmallTitle text="Education" />
         <Descriptor
+          start="left"
           img="makara-ui.png"
           bullet="Information System --- 2023 — 2027 (expected)"
           text="Current GPA: 3.94 / 4.0 
                 Credits Taken: 42"
         />
         <Descriptor
+          start="right"
           img="logo-netco.jpg"
           bullet="Science Student --- 2020 — 2023"
           text="Activities: Netco Informatics Olympiad Team, English Club
