@@ -36,6 +36,7 @@ function Navbar() {
           <Navlink text="Home" href="#" />
           <Navlink text="About" href="#about-me" />
           <Navlink text="Projects" href="#projects" />
+          <Navlink text="Contacts" href="#contacts" />
         </ul>
       </nav>
     </header>

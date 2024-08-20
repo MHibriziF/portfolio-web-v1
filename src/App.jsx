@@ -3,6 +3,7 @@ import Welcome from "./components/Welcome";
 import CircleImg from "./components/sub-components/CircleImg";
 import Projects from "./components/Projects";
 import About from "./components/About";
+import Contacts from "./components/Contacts";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import "./styles/App.css";
@@ -16,6 +17,7 @@ function App() {
       <Welcome />
       <About />
       <Projects />
+      <Contacts />
       <div className="flex flex-row justify-center my-20">
         <CircleImg size="large" img="heart.jpg" />
       </div>
