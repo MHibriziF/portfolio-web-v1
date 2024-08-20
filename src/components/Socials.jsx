@@ -14,21 +14,27 @@ function Contacts() {
           <SmallTitle text="Socials" />
         </div>
         <div className="flex">
-          <Icons
-            href="https://github.com/MHibriziF/"
-            img="../github.png"
-            alt="github-logo"
-          />
-          <Icons
-            href="https://www.linkedin.com/in/muhammad-hibrizi-farghana/"
-            img="../linkedin.png"
-            alt="linkedin-logo"
-          />
-          <Icons
-            href="https://www.instagram.com/mhibrizifarghana/"
-            img="../instagram.png"
-            alt="instagram-logo"
-          />
+          <div data-aos="flip-right" data-aos-duration="1000" className="mx-4">
+            <Icons
+              href="https://github.com/MHibriziF/"
+              img="../github.png"
+              alt="github-logo"
+            />
+          </div>
+          <div data-aos="flip-up" data-aos-duration="1000" className="mx-4">
+            <Icons
+              href="https://www.linkedin.com/in/muhammad-hibrizi-farghana/"
+              img="../linkedin.png"
+              alt="linkedin-logo"
+            />
+          </div>
+          <div data-aos="flip-left" data-aos-duration="1000" className="mx-4">
+            <Icons
+              href="https://www.instagram.com/mhibrizifarghana/"
+              img="../instagram.png"
+              alt="instagram-logo"
+            />
+          </div>
         </div>
       </div>
     </section>
