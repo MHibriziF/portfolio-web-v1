@@ -16,8 +16,8 @@ function Education() {
           img="makara-ui.png"
           bullet="Universitas Indonesia — Undergraduate Information System"
           text="
-                Current GPA: 3.94 / 4.0 
-                Credits Taken: 42"
+                Current GPA: 3.90 / 4.0 
+                Credits Taken: 60"
         />
         <Descriptor
           start="right"

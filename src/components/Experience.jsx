@@ -13,16 +13,6 @@ function Experience() {
         <SmallTitle text="Experience" />
         <Descriptor
           start="left"
-          img="makara-ui.png"
-          bullet="Universitas Indonesia — Teaching Assistant of Discrete Math 1"
-          text="
-                Aug 2024 — Present
-                Gives assistance to students
-                Makes problems for students
-                Grades students' homeworks"
-        />
-        <Descriptor
-          start="right"
           img="compfest.jpeg"
           bullet="SEA Academy Compfest — Staff"
           text="
@@ -30,6 +20,26 @@ function Experience() {
                 Scouts for potential speaker
                 Acts as a Liaison Officer for speaker and judges
                 Interviews potential candidates"
+        />
+        <Descriptor
+          start="right"
+          img="makara-ui.png"
+          bullet="Universitas Indonesia — Teaching Assistant of Discrete Math 1"
+          text="
+                Aug 2024 — Dec 2024
+                Gives assistance to students
+                Makes problems for students
+                Grades students' homeworks"
+        />
+        <Descriptor
+          start="left"
+          img="makara-ui.png"
+          bullet="Universitas Indonesia — Teaching Assistant of Introduction to Computer Architecure"
+          text="
+                Feb 2025 — Present
+                Gives assistance to students
+                Makes problems for students
+                Grades students' homeworks"
         />
       </div>
     </section>
