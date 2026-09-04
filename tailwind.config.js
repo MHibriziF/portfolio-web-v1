@@ -16,7 +16,8 @@ export default {
     },
     extend: {
       backgroundImage: {
-        "axiom-pattern": "url('/src/assets/axiom-pattern.png')",
+        "axiom-pattern":
+          "linear-gradient(rgb(23 23 23 / 0.45), rgb(23 23 23 / 0.45)), url('/src/assets/axiom-pattern.png')",
       },
       fontFamily: {
         poppins: ["Poppins", ...defaultTheme.fontFamily.sans],
