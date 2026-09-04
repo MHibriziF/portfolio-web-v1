@@ -53,16 +53,25 @@ function Carousel({ images, label }) {
           className="flex h-full w-full transition-transform duration-500 ease-out"
           style={{ transform: `translateX(-${index * 100}%)` }}
         >
-          {images.map((src, i) => (
-            <img
-              key={src}
-              src={src}
-              alt={`${label} screenshot ${i + 1} of ${count}`}
-              loading="lazy"
-              draggable="false"
-              className="h-full w-full shrink-0 object-cover"
-            />
-          ))}
+          {images.map((src, i) => {
+            // Distance the short way round, so wrapping to the last slide still
+            // finds it decoded.
+            const gap = Math.abs(i - index);
+            const near = Math.min(gap, count - gap) <= 1;
+            return near ? (
+              <img
+                key={src}
+                src={src}
+                alt={`${label} screenshot ${i + 1} of ${count}`}
+                loading="lazy"
+                decoding="async"
+                draggable="false"
+                className="h-full w-full shrink-0 object-cover"
+              />
+            ) : (
+              <div key={src} className="h-full w-full shrink-0" aria-hidden="true" />
+            );
+          })}
         </div>
 
         {count > 1 && (
