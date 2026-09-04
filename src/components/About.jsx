@@ -20,7 +20,7 @@ function About() {
           data-aos-duration="1500"
           className="min-w-0 flex-1"
         >
-          <div className="group rounded-3xl bg-gradient-to-br from-stone-700/60 via-stone-600/50 to-stone-800/60 p-5 ring-1 ring-white/10 transition duration-300 hover:ring-cyan-300/40 sm:p-7">
+          <div className="group rounded-3xl bg-gradient-to-br from-stone-700 via-stone-600 to-stone-800 p-5 ring-1 ring-white/10 transition duration-300 hover:ring-cyan-300/40 sm:p-7">
             <p className="text-center font-poppins text-sm leading-relaxed text-slate-100 spc:text-left sm:text-base">
               {profile.summary}
             </p>

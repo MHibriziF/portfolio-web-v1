@@ -12,7 +12,7 @@ function Skills() {
             key={group.label}
             data-aos="fade-up"
             data-aos-duration="1000"
-            className="rounded-2xl bg-white/[0.07] p-5 font-poppins ring-1 ring-white/10 transition duration-300 hover:bg-white/10 hover:ring-cyan-300/40"
+            className="rounded-2xl bg-[#25252a] p-5 font-poppins ring-1 ring-white/10 transition duration-300 hover:bg-[#2e2e34] hover:ring-cyan-300/40"
           >
             <h3 className="text-sm font-semibold uppercase tracking-wide text-cyan-200">
               {group.label}
@@ -32,7 +32,7 @@ function Skills() {
             key={cert.name}
             data-aos="fade-up"
             data-aos-duration="1000"
-            className="flex gap-3 rounded-2xl bg-white/[0.07] p-5 font-poppins ring-1 ring-white/10 transition duration-300 hover:bg-white/10 hover:ring-cyan-300/40"
+            className="flex gap-3 rounded-2xl bg-[#25252a] p-5 font-poppins ring-1 ring-white/10 transition duration-300 hover:bg-[#2e2e34] hover:ring-cyan-300/40"
           >
             <span aria-hidden="true" className="text-xl">
               🏅
