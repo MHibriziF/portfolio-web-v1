@@ -37,7 +37,7 @@ function Navbar() {
   }, []);
 
   return (
-    <header className="sticky top-0 z-20 border-b border-white/5 bg-black/40 font-poppins text-white backdrop-blur-md">
+    <header className="sticky top-0 z-20 border-b border-white/5 bg-black/70 font-poppins text-white backdrop-blur-md">
       <nav
         aria-label="Main"
         className="mx-auto flex w-full max-w-6xl flex-wrap items-center justify-between gap-2 px-4 py-4 sm:px-6"
