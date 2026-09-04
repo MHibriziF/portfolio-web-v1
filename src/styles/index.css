@@ -36,3 +36,94 @@
   }
 }
 
+@layer components {
+  /*
+   * Cut-corner index tag.
+   *
+   * The standard chip vocabulary is only radius / fill / border / shadow, so a
+   * clipped corner plus a left index bar reads as this site's own rather than
+   * as every other Tailwind pill. `clip-path` would eat a real border, so the
+   * outline is the parent showing through 1px around an inset inner layer —
+   * that way the hairline follows the diagonal instead of stopping at it.
+   */
+  .tag,
+  .tag-meta {
+    position: relative;
+    display: inline-flex;
+    padding: 1px;
+    clip-path: polygon(0 0, calc(100% - 10px) 0, 100% 10px, 100% 100%, 0 100%);
+    transition: background-color 0.3s, transform 0.3s;
+  }
+
+  .tag > span,
+  .tag-meta > span {
+    display: inline-flex;
+    align-items: center;
+    clip-path: polygon(0 0, calc(100% - 9px) 0, 100% 9px, 100% 100%, 0 100%);
+    transition: background-color 0.3s, color 0.3s;
+  }
+
+  /* Left index bar, sitting on top of the hairline like a file label. */
+  .tag::before,
+  .tag-meta::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    width: 2px;
+    transition: background-color 0.3s;
+  }
+
+  .tag {
+    background-color: rgb(148 163 184 / 0.35);
+  }
+
+  .tag > span {
+    padding: 0.3rem 0.7rem 0.3rem 0.75rem;
+    font-size: 0.72rem;
+    font-weight: 500;
+    letter-spacing: 0.03em;
+    color: rgb(226 232 240);
+    background-color: rgb(23 23 23 / 0.92);
+  }
+
+  .tag::before {
+    background-color: rgb(103 232 249 / 0.45);
+  }
+
+  .tag:hover {
+    background-color: rgb(103 232 249 / 0.7);
+    transform: translateY(-1px);
+  }
+
+  .tag:hover > span {
+    color: rgb(255 255 255);
+    background-color: rgb(8 51 68 / 0.92);
+  }
+
+  .tag:hover::before {
+    background-color: rgb(103 232 249);
+  }
+
+  /* Same silhouette for static metadata (dates, roles) — no hover lift, since
+     these are labels rather than something to reach for. */
+  .tag-meta {
+    background-color: rgb(103 232 249 / 0.45);
+  }
+
+  .tag-meta > span {
+    padding: 0.25rem 0.7rem 0.25rem 0.75rem;
+    font-size: 0.68rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: rgb(165 243 252);
+    background-color: rgb(8 51 68 / 0.92);
+  }
+
+  .tag-meta::before {
+    background-color: rgb(103 232 249);
+  }
+}
