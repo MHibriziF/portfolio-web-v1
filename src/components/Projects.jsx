@@ -1,28 +1,21 @@
 import React from "react";
-import SmallTitle from "./sub-components/SmallTitle";
+import Section from "./sub-components/Section";
+import ProjectCard from "./sub-components/ProjectCard";
+import { projects } from "../data/portfolio";
 
 function Projects() {
   return (
-    <>
-      <section id="projects" className="pt-7 flex justify-center text-white">
-        <div
-          data-aos="zoom-in"
-          data-aos-duration="1500"
-          className="mt-16 flex flex-col justify-center"
-        >
-          <SmallTitle text="Projects" />
-        </div>
-      </section>
-      <div
-        data-aos="zoom-out"
-        data-aos-duration="1500"
-        className="flex justify-center font-poppins text-slate-300 mx-0 px-0"
-      >
-        <h1 className="spc:text-6xl sm:text-3xl text-2xl hover:font-bold hover:text-slate-400 hover:scale-125 transition-all">
-          Coming soon...
-        </h1>
+    <Section
+      id="projects"
+      title="Projects"
+      subtitle="Things I have built — the stack I used and what I actually contributed."
+    >
+      <div className="flex flex-col gap-8">
+        {projects.map((project, index) => (
+          <ProjectCard key={project.id} project={project} index={index} />
+        ))}
       </div>
-    </>
+    </Section>
   );
 }
 
