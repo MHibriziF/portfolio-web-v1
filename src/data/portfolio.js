@@ -13,7 +13,7 @@ export const profile = {
 export const education = [
   {
     org: "Universitas Indonesia",
-    logo: "/makara-ui.png",
+    logo: "/makara-ui.webp",
     role: "Bachelor of Information Systems",
     period: "Jul 2023 — Present",
     place: "Depok, Indonesia",
@@ -89,7 +89,7 @@ export const experience = [
     // Not on the CV — sourced from LinkedIn. All four courses are folded into
     // one entry so the timeline does not repeat the same org four times.
     org: "Faculty of Computer Science, Universitas Indonesia",
-    logo: "/makara-ui.png",
+    logo: "/makara-ui.webp",
     role: "Teaching Assistant",
     period: "Aug 2024 — Present",
     place: "Depok, Indonesia",
@@ -155,9 +155,9 @@ export const projects = [
       "Designed backend APIs and service integrations coordinating LLM inference, conversational state, and real-time avatar communication.",
     ],
     images: [
-      "/projects/inagrichat/inagrichat-1.jpeg",
-      "/projects/inagrichat/inagrichat-2.jpeg",
-      "/projects/inagrichat/inagrichat-3.jpeg",
+      "/projects/inagrichat/inagrichat-1.webp",
+      "/projects/inagrichat/inagrichat-2.webp",
+      "/projects/inagrichat/inagrichat-3.webp",
     ],
   },
   {
@@ -178,11 +178,11 @@ export const projects = [
       "Implemented image classification through both on-device inference and Firebase-hosted models, recognizing food locally and through remotely deployed models.",
     ],
     images: [
-      "/projects/foodreg/foodreg-1.jpeg",
-      "/projects/foodreg/foodreg-2.jpeg",
-      "/projects/foodreg/foodreg-3.jpeg",
-      "/projects/foodreg/foodreg-4.jpeg",
-      "/projects/foodreg/foodreg-5.jpeg",
+      "/projects/foodreg/foodreg-1.webp",
+      "/projects/foodreg/foodreg-2.webp",
+      "/projects/foodreg/foodreg-3.webp",
+      "/projects/foodreg/foodreg-4.webp",
+      "/projects/foodreg/foodreg-5.webp",
     ],
   },
   {
@@ -197,9 +197,9 @@ export const projects = [
       "Implemented authentication, movie discovery, search, favorites, watchlist, and pagination for an efficient and responsive experience.",
     ],
     images: [
-      "/projects/movie-app/movapp-1.png",
-      "/projects/movie-app/movapp-2.png",
-      "/projects/movie-app/movapp-3.png",
+      "/projects/movie-app/movapp-1.webp",
+      "/projects/movie-app/movapp-2.webp",
+      "/projects/movie-app/movapp-3.webp",
     ],
   },
 ];
