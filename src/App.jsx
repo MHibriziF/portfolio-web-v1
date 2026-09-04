@@ -21,6 +21,38 @@ function App() {
     AOS.init({ once: true, duration: 1000, offset: 80 });
   }, []);
 
+  // Deep links (/#projects) land before React has rendered the sections, so
+  // the browser finds no anchor and stays at the top. Re-run the jump once the
+  // markup exists.
+  useEffect(() => {
+    const id = decodeURIComponent(window.location.hash.replace("#", ""));
+    if (!id) return undefined;
+
+    const jump = () => {
+      const target = document.getElementById(id);
+      if (target) target.scrollIntoView({ behavior: "instant", block: "start" });
+    };
+
+    // Chrome resets the scroll position when loading finishes, which undoes a
+    // jump made during render — hence `manual` plus a re-assert after `load`.
+    const previousRestoration = window.history.scrollRestoration;
+    window.history.scrollRestoration = "manual";
+
+    const frame = requestAnimationFrame(jump);
+    const settle = setTimeout(() => {
+      jump();
+      window.history.scrollRestoration = previousRestoration;
+    }, 300);
+    window.addEventListener("load", jump);
+
+    return () => {
+      cancelAnimationFrame(frame);
+      clearTimeout(settle);
+      window.removeEventListener("load", jump);
+      window.history.scrollRestoration = previousRestoration;
+    };
+  }, []);
+
   return (
     <div className="flex min-h-screen flex-col">
       <Navbar />
