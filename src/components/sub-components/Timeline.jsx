@@ -21,7 +21,7 @@ function Timeline({ items }) {
         return (
           <li
             key={`${item.org}-${item.role}`}
-            className="relative min-h-[3.5rem] pl-20 spc:grid spc:grid-cols-[1fr_7rem_1fr] spc:items-start spc:pl-0"
+            className="relative min-h-[3.5rem] pl-20 spc:grid spc:grid-cols-[1fr_7rem_1fr] spc:items-start spc:gap-x-8 spc:pl-0"
           >
             <div
               data-aos="zoom-in"
