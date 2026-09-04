@@ -1,43 +1,39 @@
 import React from "react";
 import Icons from "./Icons";
-import SmallTitle from "./sub-components/SmallTitle";
+import Section from "./sub-components/Section";
+import { profile, socials } from "../data/portfolio";
+
+const AOS_BY_INDEX = ["flip-right", "flip-up", "flip-left"];
 
 function Contacts() {
   return (
-    <section id="socials" className="pt-7 flex justify-center text-white">
-      <div className="flex flex-col">
-        <div
-          data-aos="zoom-in"
-          data-aos-duration="1500"
-          className="mt-32 flex flex-col justify-center"
-        >
-          <SmallTitle text="Socials" />
-        </div>
-        <div className="flex">
-          <div data-aos="flip-right" data-aos-duration="1000" className="mx-4">
-            <Icons
-              href="https://github.com/MHibriziF/"
-              img="../github.png"
-              alt="github-logo"
-            />
+    <Section
+      id="socials"
+      title="Socials"
+      subtitle="Feel free to reach out — I am always happy to talk about tech."
+    >
+      <div className="flex flex-wrap justify-center gap-4 sm:gap-8">
+        {socials.map((social, index) => (
+          <div
+            key={social.alt}
+            data-aos={AOS_BY_INDEX[index % AOS_BY_INDEX.length]}
+            data-aos-duration="1000"
+          >
+            <Icons href={social.href} img={social.img} alt={social.alt} />
           </div>
-          <div data-aos="flip-up" data-aos-duration="1000" className="mx-4">
-            <Icons
-              href="https://www.linkedin.com/in/muhammad-hibrizi-farghana/"
-              img="../linkedin.png"
-              alt="linkedin-logo"
-            />
-          </div>
-          <div data-aos="flip-left" data-aos-duration="1000" className="mx-4">
-            <Icons
-              href="https://www.instagram.com/mhibrizifarghana/"
-              img="../instagram.png"
-              alt="instagram-logo"
-            />
-          </div>
-        </div>
+        ))}
       </div>
-    </section>
+
+      <p className="mt-8 text-center font-poppins text-sm text-slate-300">
+        or email me at{" "}
+        <a
+          href={`mailto:${profile.email}`}
+          className="font-semibold text-cyan-200 underline decoration-dotted underline-offset-4 transition hover:text-cyan-100"
+        >
+          {profile.email}
+        </a>
+      </p>
+    </Section>
   );
 }
 
