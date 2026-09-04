@@ -43,7 +43,7 @@ function ProjectCard({ project, index }) {
           <p className="mt-1 break-words text-sm font-medium text-cyan-100/80 sm:text-base">
             {project.subtitle}
           </p>
-          <p className="mt-0.5 break-words text-xs text-slate-400">
+          <p className="mt-0.5 break-words text-xs text-slate-300">
             {project.context}
           </p>
 
@@ -57,7 +57,7 @@ function ProjectCard({ project, index }) {
             {project.points.map((point) => (
               <li
                 key={point}
-                className="flex gap-2.5 text-sm leading-relaxed text-slate-300"
+                className="flex gap-2.5 text-sm leading-relaxed text-slate-200"
               >
                 <span
                   aria-hidden="true"

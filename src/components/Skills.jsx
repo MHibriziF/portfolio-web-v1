@@ -42,7 +42,7 @@ function Skills() {
                 {cert.name}
               </h3>
               <p className="text-xs text-cyan-100/80">{cert.issuer}</p>
-              <p className="mt-1 break-words text-xs text-slate-400">
+              <p className="mt-1 break-words text-xs text-slate-300">
                 {cert.details}
               </p>
             </div>

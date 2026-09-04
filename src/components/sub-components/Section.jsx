@@ -17,7 +17,7 @@ function Section({ id, title, subtitle, children, className = "" }) {
           <div data-aos="zoom-in" data-aos-duration="1200">
             <SmallTitle text={title} />
             {subtitle && (
-              <p className="mx-auto mb-10 max-w-2xl text-center font-poppins text-sm text-slate-400 sm:text-base">
+              <p className="mx-auto mb-10 max-w-2xl text-center font-poppins text-sm text-slate-300 sm:text-base">
                 {subtitle}
               </p>
             )}

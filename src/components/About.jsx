@@ -24,7 +24,7 @@ function About() {
             <p className="text-center font-poppins text-sm leading-relaxed text-slate-100 spc:text-left sm:text-base">
               {profile.summary}
             </p>
-            <p className="mt-4 text-center font-poppins text-xs text-slate-400 spc:text-left">
+            <p className="mt-4 text-center font-poppins text-xs text-slate-200 spc:text-left">
               📍 {profile.location} · ✉️{" "}
               <a
                 href={`mailto:${profile.email}`}

@@ -55,7 +55,7 @@ function Timeline({ items }) {
                   {item.role}
                 </p>
                 {item.place && (
-                  <p className="mt-0.5 text-xs text-slate-400">{item.place}</p>
+                  <p className="mt-0.5 text-xs text-slate-300">{item.place}</p>
                 )}
 
                 <ul className="mt-3 flex flex-col gap-2">
@@ -68,7 +68,7 @@ function Timeline({ items }) {
                     return (
                       <li
                         key={label ?? text}
-                        className="flex gap-2 text-left text-sm leading-relaxed text-slate-300"
+                        className="flex gap-2 text-left text-sm leading-relaxed text-slate-200"
                       >
                         <span
                           aria-hidden="true"
