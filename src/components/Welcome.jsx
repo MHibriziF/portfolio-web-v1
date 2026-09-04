@@ -10,7 +10,7 @@ function Welcome() {
       <div
         data-aos="zoom-in"
         data-aos-duration="1500"
-        className="w-full max-w-3xl animate-floating rounded-3xl bg-stone-100/20 px-6 py-10 text-center font-poppins text-teal-50 ring-1 ring-white/40 backdrop-blur-sm transition-shadow duration-500 hover:shadow-xl hover:shadow-blue-500/50 sm:px-10 md:px-16 md:py-14"
+        className="w-full max-w-3xl animate-floating rounded-3xl bg-stone-100/20 px-6 py-10 text-center font-poppins text-teal-50 ring-1 ring-white/40 backdrop-blur-md transition-shadow duration-500 hover:shadow-xl hover:shadow-blue-500/50 sm:px-10 md:px-16 md:py-14"
       >
         <div data-aos="fade-down" data-aos-duration="2000">
           <h1 className="pb-3 text-3xl transition hover:scale-110 hover:text-white sm:text-4xl md:text-5xl">
