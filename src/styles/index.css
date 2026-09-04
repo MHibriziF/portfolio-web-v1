@@ -1,3 +1,38 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  body {
+    /* Belt-and-braces: nothing may widen the page on small screens. Note this
+       must NOT go on <html> — overflow on the root element breaks the sticky
+       navbar. <main> carries a matching clip for the same reason. */
+    overflow-x: clip;
+  }
+
+  /* Long unbroken strings (URLs, org names) wrap instead of stretching cards. */
+  h1,
+  h2,
+  h3,
+  p,
+  li,
+  a {
+    overflow-wrap: break-word;
+  }
+
+  ::selection {
+    background-color: rgb(103 232 249 / 0.35);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+

@@ -4,16 +4,22 @@ const defaultTheme = require("tailwindcss/defaultTheme");
 export default {
   content: ["./index.html", "./src/**/*.{js,jsx}"],
   theme: {
+    // Keep the custom `spc` breakpoint ordered by size so its variants keep
+    // beating `md` and lose to `lg` instead of being emitted before `sm`.
     screens: {
+      sm: defaultTheme.screens.sm,
+      md: defaultTheme.screens.md,
       spc: "924px",
-      ...defaultTheme.screens,
+      lg: defaultTheme.screens.lg,
+      xl: defaultTheme.screens.xl,
+      "2xl": defaultTheme.screens["2xl"],
     },
     extend: {
       backgroundImage: {
         "axiom-pattern": "url('/src/assets/axiom-pattern.png')",
       },
       fontFamily: {
-        poppins: ["Poppins"],
+        poppins: ["Poppins", ...defaultTheme.fontFamily.sans],
       },
       keyframes: {
         float: {
@@ -35,12 +41,17 @@ export default {
           "75%": { color: "#6f00fe" },
           "100%": { color: "#ad0afd" },
         },
+        "fade-slide": {
+          "0%": { opacity: "0", transform: "translateY(6px)" },
+          "100%": { opacity: "1", transform: "translateY(0)" },
+        },
       },
       animation: {
         floating: "float 15s linear infinite",
         "bounce-slow": "bounce-less 10s linear infinite",
         rainbow: "rainbows 10s linear infinite",
         "rainbow-fast": "rainbows 5s linear infinite",
+        "fade-slide": "fade-slide 400ms ease-out",
       },
     },
   },
