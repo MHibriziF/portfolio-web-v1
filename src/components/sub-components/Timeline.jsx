@@ -38,7 +38,7 @@ function Timeline({ items }) {
                 flip ? "spc:col-start-3" : "spc:col-start-1"
               } spc:row-start-1`}
             >
-              <article className="group h-full rounded-2xl bg-white/5 p-5 font-poppins ring-1 ring-white/10 backdrop-blur-sm transition duration-300 hover:bg-white/10 hover:ring-cyan-300/40">
+              <article className="group h-full rounded-2xl bg-white/[0.07] p-5 font-poppins ring-1 ring-white/10 transition duration-300 hover:bg-white/10 hover:ring-cyan-300/40">
                 <span className="tag-meta">
                   <span>{item.period}</span>
                 </span>

@@ -15,7 +15,7 @@ function ProjectCard({ project, index }) {
     <article
       data-aos="fade-up"
       data-aos-duration="1000"
-      className="group rounded-3xl bg-white/5 p-5 font-poppins ring-1 ring-white/10 backdrop-blur-sm transition duration-300 hover:bg-white/[0.08] hover:ring-cyan-300/40 sm:p-7"
+      className="group rounded-3xl bg-white/[0.07] p-5 font-poppins ring-1 ring-white/10 transition duration-300 hover:bg-white/[0.08] hover:ring-cyan-300/40 sm:p-7"
     >
       <div
         className={`flex flex-col gap-6 ${

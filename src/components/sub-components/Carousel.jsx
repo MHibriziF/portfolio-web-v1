@@ -71,7 +71,7 @@ function Carousel({ images, label }) {
               type="button"
               onClick={() => go(index - 1)}
               aria-label="Previous screenshot"
-              className="absolute left-1 top-1/2 grid h-8 w-8 -translate-y-1/2 place-items-center rounded-full bg-black/50 text-white backdrop-blur-sm transition hover:bg-black/80 focus:outline-none focus-visible:ring-2 focus-visible:ring-cyan-300"
+              className="absolute left-1 top-1/2 grid h-8 w-8 -translate-y-1/2 place-items-center rounded-full bg-black/50 text-white transition hover:bg-black/80 focus:outline-none focus-visible:ring-2 focus-visible:ring-cyan-300"
             >
               <Chevron direction="left" />
             </button>
@@ -79,7 +79,7 @@ function Carousel({ images, label }) {
               type="button"
               onClick={() => go(index + 1)}
               aria-label="Next screenshot"
-              className="absolute right-1 top-1/2 grid h-8 w-8 -translate-y-1/2 place-items-center rounded-full bg-black/50 text-white backdrop-blur-sm transition hover:bg-black/80 focus:outline-none focus-visible:ring-2 focus-visible:ring-cyan-300"
+              className="absolute right-1 top-1/2 grid h-8 w-8 -translate-y-1/2 place-items-center rounded-full bg-black/50 text-white transition hover:bg-black/80 focus:outline-none focus-visible:ring-2 focus-visible:ring-cyan-300"
             >
               <Chevron direction="right" />
             </button>
