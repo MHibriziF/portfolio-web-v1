@@ -28,7 +28,12 @@ function Timeline({ items }) {
               data-aos-duration="1200"
               className="absolute left-0 top-0 spc:static spc:col-start-2 spc:row-start-1 spc:flex spc:justify-center"
             >
-              <CircleImg size="timeline" img={item.logo} name={item.org} />
+              <CircleImg
+                size="timeline"
+                img={item.logo}
+                name={item.org}
+                animated={false}
+              />
             </div>
 
             <div
