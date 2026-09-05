@@ -1,7 +1,7 @@
 # Portfolio — Muhammad Hibrizi Farghana (Izi)
 
 Single-page React portfolio built with Vite and Tailwind, deployed at
-<https://mhibrizif.site>.
+<https://www.mhibrizif.com>.
 
 ## Commands
 
