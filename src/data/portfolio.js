@@ -1,13 +1,51 @@
 // Single source of truth for every section's content, kept in sync with
 // CV_MuhammadHibriziFarghana.pdf. Update here, not inside the components.
 
+// Where the site is served from. Used for the canonical URL, Open Graph tags,
+// the sitemap, and the JSON-LD `@id` — change it here and everything follows.
+export const site = {
+  url: "https://mhibrizif.site",
+  title: "Muhammad Hibrizi Farghana (Izi) — Backend, Mobile & AI Developer",
+  description:
+    "Muhammad Hibrizi Farghana (Izi) — backend, mobile & AI application developer and Information Systems student at Universitas Indonesia. Flutter, Spring Boot, FastAPI, Next.js.",
+  // The sharing preview. /izi.jpg is only 256x256, which is why the Twitter
+  // card below is the small "summary" variant — a large card needs roughly
+  // 1200x630. Drop such an image into public/ and update these three values
+  // together to get the wide preview.
+  ogImage: "/izi.jpg",
+  ogImageWidth: 256,
+  ogImageHeight: 256,
+  ogImageType: "image/jpeg",
+  twitterCard: "summary",
+  locale: "en_US",
+};
+
 export const profile = {
   name: "Muhammad Hibrizi Farghana",
+  givenName: "Muhammad",
+  familyName: "Farghana",
+  nickname: "Izi",
+  // The spellings people actually type into a search box. These become the
+  // Person schema's `alternateName`, which is how a search engine learns that
+  // "Izi", "Hibrizi" and the full name all point at one person.
+  alternateNames: [
+    "Izi",
+    "Hibrizi",
+    "Muhammad Hibrizi",
+    "Hibrizi Farghana",
+    "Izi Farghana",
+    "M. Hibrizi Farghana",
+    "MHibriziF",
+  ],
   tagline: "Backend, Mobile & AI-Integrated Application Developer",
   location: "Depok, Indonesia",
+  locality: "Depok",
+  region: "West Java",
+  country: "ID",
   email: "hibrizifarghana@gmail.com",
+  photo: "/izi.jpg",
   summary:
-    "I am an Information Systems undergraduate at Universitas Indonesia (GPA 3.79/4.00) with hands-on experience in backend, mobile, and AI-integrated application development using Flutter, Django, Spring Boot, and FastAPI. I enjoy building scalable backend systems, wiring up external services and APIs, and shipping apps powered by LLMs and real-time AI. Outside of code, I love teaching, mentoring, and watching anime.",
+    "I am Muhammad Hibrizi Farghana — most people just call me Izi. I am an Information Systems undergraduate at Universitas Indonesia (GPA 3.79/4.00) with hands-on experience in backend, mobile, and AI-integrated application development using Flutter, Django, Spring Boot, and FastAPI. I enjoy building scalable backend systems, wiring up external services and APIs, and shipping apps powered by LLMs and real-time AI. Outside of code, I love teaching, mentoring, and watching anime.",
 };
 
 export const education = [
