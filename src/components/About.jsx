@@ -12,7 +12,12 @@ function About() {
           data-aos-duration="1500"
           className="shrink-0"
         >
-          <CircleImg size="medium" img="/izi.jpg" name={profile.name} />
+          <CircleImg
+            size="medium"
+            img="/izi.jpg"
+            name={profile.name}
+            alt={`Portrait of ${profile.name} (${profile.nickname})`}
+          />
         </div>
 
         <div

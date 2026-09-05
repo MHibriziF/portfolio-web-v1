@@ -30,8 +30,18 @@ function initialsOf(name = "") {
 /**
  * Round avatar. Falls back to an initials monogram when no image is provided,
  * so entries without a logo asset still look deliberate.
+ *
+ * The picture is a real <img>, not a CSS background: background images are
+ * invisible to image search, and this photo is one of the things people look
+ * for by name.
  */
-function CircleImg({ size = "small", img, name = "", animated = true }) {
+function CircleImg({
+  size = "small",
+  img,
+  name = "",
+  alt,
+  animated = true,
+}) {
   const frame = [
     SIZES[size] ?? SIZES.small,
     "shrink-0 rounded-full border-4 border-slate-700 ring-4 ring-slate-800 bg-neutral-900",
@@ -57,12 +67,15 @@ function CircleImg({ size = "small", img, name = "", animated = true }) {
   }
 
   return (
-    <div
-      className={`${frame} bg-contain bg-center bg-no-repeat`}
-      style={{ backgroundImage: `url('${img}')` }}
-      role="img"
-      aria-label={name}
-    />
+    <div className={`${frame} overflow-hidden`}>
+      <img
+        src={img}
+        alt={alt ?? name}
+        loading="lazy"
+        decoding="async"
+        className="h-full w-full object-contain"
+      />
+    </div>
   );
 }
 

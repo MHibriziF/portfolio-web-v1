@@ -67,7 +67,7 @@ function App() {
         <Contacts />
 
         <div className="flex flex-col items-center justify-center px-4 py-16 text-center">
-          <CircleImg size="large" img="/heart.jpg" name={profile.name} />
+          <CircleImg size="large" img="/heart.jpg" name={profile.name} alt="" />
           <h2 className="mt-4 font-poppins text-3xl font-bold text-white md:text-5xl">
             Thank you!
           </h2>

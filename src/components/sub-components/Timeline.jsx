@@ -32,6 +32,7 @@ function Timeline({ items }) {
                 size="timeline"
                 img={item.logo}
                 name={item.org}
+                alt={`${item.org} logo`}
                 animated={false}
               />
             </div>
