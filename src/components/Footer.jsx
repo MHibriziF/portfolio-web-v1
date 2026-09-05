@@ -13,8 +13,9 @@ function Footer() {
             <li key={social.alt}>
               <a
                 href={social.href}
+                aria-label={`${profile.name} on ${social.alt}`}
                 target="_blank"
-                rel="noreferrer noopener"
+                rel="me noreferrer noopener"
                 className="transition hover:text-cyan-200"
               >
                 {social.alt}
