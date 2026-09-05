@@ -3,8 +3,9 @@ import { profile } from "../data/portfolio";
 
 function Welcome() {
   return (
-    <header
+    <section
       id="top"
+      aria-labelledby="hero-name"
       className="flex w-full scroll-mt-24 justify-center px-4 pb-16 pt-20 sm:px-6 md:pt-28"
     >
       <div
@@ -13,9 +14,9 @@ function Welcome() {
         className="w-full max-w-3xl animate-floating rounded-3xl bg-stone-100/20 px-6 py-10 text-center font-poppins text-teal-50 ring-1 ring-white/40 backdrop-blur-md transition-shadow duration-500 hover:shadow-xl hover:shadow-blue-500/50 sm:px-10 md:px-16 md:py-14"
       >
         <div data-aos="fade-down" data-aos-duration="2000">
-          <h1 className="pb-3 text-3xl transition hover:scale-110 hover:text-white sm:text-4xl md:text-5xl">
+          <p className="pb-3 text-3xl transition hover:scale-110 hover:text-white sm:text-4xl md:text-5xl">
             Hello!
-          </h1>
+          </p>
         </div>
 
         <div data-aos="zoom-in" data-aos-duration="2000">
@@ -25,9 +26,15 @@ function Welcome() {
         </div>
 
         <div data-aos="fade-up" data-aos-duration="2000">
-          <h2 className="animate-rainbow-fast break-words text-xl font-bold transition hover:scale-105 hover:text-white sm:text-2xl md:text-3xl">
+          <h1
+            id="hero-name"
+            className="animate-rainbow-fast break-words text-xl font-bold transition hover:scale-105 hover:text-white sm:text-2xl md:text-3xl"
+          >
             {profile.name}
-          </h2>
+          </h1>
+          <p className="mt-2 text-sm text-slate-200 sm:text-base">
+            — or just {profile.nickname}
+          </p>
           <p className="mx-auto mt-4 max-w-md text-xs text-slate-200 sm:text-sm md:text-base">
             {profile.tagline}
           </p>
@@ -52,7 +59,7 @@ function Welcome() {
           </a>
         </div>
       </div>
-    </header>
+    </section>
   );
 }
 
