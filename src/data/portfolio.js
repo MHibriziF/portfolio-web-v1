@@ -4,7 +4,7 @@
 // Where the site is served from. Used for the canonical URL, Open Graph tags,
 // the sitemap, and the JSON-LD `@id` — change it here and everything follows.
 export const site = {
-  url: "https://www.mhibrizif.site",
+  url: "https://www.mhibrizif.com",
   title: "Muhammad Hibrizi Farghana (Izi) — Backend, Mobile & AI Developer",
   description:
     "Muhammad Hibrizi Farghana (Izi) — backend, mobile & AI application developer and Information Systems student at Universitas Indonesia. Flutter, Spring Boot, FastAPI, Next.js.",
