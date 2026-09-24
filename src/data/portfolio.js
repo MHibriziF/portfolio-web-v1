@@ -158,7 +158,7 @@ export const projects = [
     name: "Zimail",
     subtitle: "Self-hosted Email, Calendar & Video Meetings on Cloudflare Workers",
     context: "Open-source project",
-    role: "Fork Maintainer",
+    role: "Fork",
     // Zimail is a fork. The original mail client is upstream's work, so the
     // points below only list what this fork adds on top of it.
     forkOf: {
