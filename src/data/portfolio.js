@@ -180,6 +180,37 @@ export const projects = [
     images: [],
   },
   {
+    id: "zimail",
+    name: "Zimail",
+    subtitle: "Self-hosted Email, Calendar & Meetings on Cloudflare Workers",
+    context: "Open-source fork of quickinbox",
+    role: "Maintainer",
+    stack: [
+      "SvelteKit",
+      "TypeScript",
+      "Cloudflare Workers",
+      "Cloudflare D1",
+      "Cloudflare R2",
+      "LiveKit",
+      "Resend",
+    ],
+    points: [
+      "Maintain a self-hosted email client for your own domain that runs entirely on Cloudflare Workers — threads, attachments in R2, multiple domains and users, plus a REST API, CLI, and MCP server.",
+      "Added LiveKit video meetings with reusable join codes, a waiting room, screen sharing, background effects, and in-browser recording.",
+      "Built a calendar that syncs Google, Outlook, and iCloud feeds, with public reservation pages that send real calendar invitations and can open a meeting room per booking.",
+      "Moved scheduled send to a Cron Trigger so it works on either mail provider, and made the Worker apply its own D1 migrations so one-click deploys start with a working database.",
+      "Added TOTP two-factor authentication with backup codes, a recovery address, retention-based cleanup, and a Bahasa Indonesia translation.",
+    ],
+    link: "https://github.com/MHibriziF/zimail",
+    // Desktop web app, so the screenshots are landscape.
+    screenshots: "desktop",
+    images: [
+      "/projects/zimail/zimail-1.webp",
+      "/projects/zimail/zimail-2.webp",
+      "/projects/zimail/zimail-3.webp",
+    ],
+  },
+  {
     id: "inagrichat",
     name: "INAGRICHAT",
     subtitle: "AI Avatar Chatbot for Farmers",
