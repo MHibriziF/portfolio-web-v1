@@ -69,20 +69,27 @@ function ProjectCard({ project, index }) {
   );
 
   const points = (
-    <ul className="flex flex-col gap-2.5">
-      {project.points.map((point) => (
-        <li
-          key={point}
-          className="flex gap-2.5 text-sm leading-relaxed text-slate-200"
-        >
-          <span
-            aria-hidden="true"
-            className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-slate-500 transition-colors group-hover:bg-cyan-300"
-          />
-          <span className="min-w-0 break-words">{point}</span>
-        </li>
-      ))}
-    </ul>
+    <>
+      {project.pointsTitle && (
+        <h4 className="mb-3 text-sm font-semibold uppercase tracking-wide text-cyan-200">
+          {project.pointsTitle}
+        </h4>
+      )}
+      <ul className="flex flex-col gap-2.5">
+        {project.points.map((point) => (
+          <li
+            key={point}
+            className="flex gap-2.5 text-sm leading-relaxed text-slate-200"
+          >
+            <span
+              aria-hidden="true"
+              className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-slate-500 transition-colors group-hover:bg-cyan-300"
+            />
+            <span className="min-w-0 break-words">{point}</span>
+          </li>
+        ))}
+      </ul>
+    </>
   );
 
   return (

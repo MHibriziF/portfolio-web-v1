@@ -94,7 +94,12 @@ function ProjectDetails({ project, shots, startIndex, onClose }) {
             ))}
           </ul>
 
-          <ul className="mt-6 flex flex-col gap-3">
+          {project.pointsTitle && (
+            <h4 className="mt-7 text-sm font-semibold uppercase tracking-wide text-cyan-200">
+              {project.pointsTitle}
+            </h4>
+          )}
+          <ul className="mt-4 flex flex-col gap-3">
             {project.points.map((point) => (
               <li
                 key={point}
