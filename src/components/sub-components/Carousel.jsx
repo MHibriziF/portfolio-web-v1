@@ -2,15 +2,27 @@ import React, { useCallback, useRef, useState } from "react";
 
 const SWIPE_THRESHOLD = 40; // px of horizontal travel before a swipe counts
 
+const FRAMES = {
+  phone: {
+    wrapper: "max-w-[14rem] md:max-w-none",
+    screen: "aspect-[9/19.5] rounded-[1.75rem] border-4",
+  },
+  desktop: {
+    wrapper: "",
+    screen: "aspect-[16/10] rounded-xl border-2",
+  },
+};
+
 /**
- * Screenshot carousel for a project card. Sized as a phone screen because every
- * screenshot is a portrait mobile capture. Supports buttons, dots, arrow keys,
- * and touch swipes.
+ * Screenshot carousel for a project card, framed as a phone screen for
+ * portrait mobile captures or as a desktop window for landscape web captures.
+ * Supports buttons, dots, arrow keys, and touch swipes.
  */
-function Carousel({ images, label }) {
+function Carousel({ images, label, variant = "phone" }) {
   const [index, setIndex] = useState(0);
   const touchStartX = useRef(null);
   const count = images.length;
+  const frame = FRAMES[variant];
 
   const go = useCallback(
     (next) => setIndex(((next % count) + count) % count),
@@ -36,7 +48,7 @@ function Carousel({ images, label }) {
   };
 
   return (
-    <div className="mx-auto w-full max-w-[14rem] select-none md:max-w-none">
+    <div className={`mx-auto w-full select-none ${frame.wrapper}`}>
       <div
         role="group"
         aria-roledescription="carousel"
@@ -47,7 +59,7 @@ function Carousel({ images, label }) {
           touchStartX.current = event.touches[0].clientX;
         }}
         onTouchEnd={onTouchEnd}
-        className="group relative aspect-[9/19.5] w-full overflow-hidden rounded-[1.75rem] border-4 border-slate-700 bg-neutral-950 shadow-xl shadow-black/40 ring-1 ring-white/10 focus:outline-none focus-visible:ring-2 focus-visible:ring-cyan-300"
+        className={`group relative w-full overflow-hidden ${frame.screen} border-slate-700 bg-neutral-950 shadow-xl shadow-black/40 ring-1 ring-white/10 focus:outline-none focus-visible:ring-2 focus-visible:ring-cyan-300`}
       >
         <div
           className="flex h-full w-full transition-transform duration-500 ease-out"
