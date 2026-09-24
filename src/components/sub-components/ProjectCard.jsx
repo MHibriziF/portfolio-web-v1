@@ -61,6 +61,18 @@ function ProjectCard({ project, index }) {
             {project.context}
           </p>
 
+          {project.link && (
+            <a
+              href={project.link}
+              target="_blank"
+              rel="noreferrer noopener"
+              className="mt-3 inline-flex items-center gap-1.5 rounded text-sm font-medium text-cyan-300 transition hover:text-cyan-100 focus:outline-none focus-visible:ring-2 focus-visible:ring-cyan-300"
+            >
+              View on GitHub
+              <span aria-hidden="true">&rarr;</span>
+            </a>
+          )}
+
           <ul className="mt-4 flex flex-wrap gap-2">
             {project.stack.map((tech) => (
               <Chip key={tech}>{tech}</Chip>
