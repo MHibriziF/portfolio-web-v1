@@ -167,7 +167,7 @@ export const projects = [
       url: "https://github.com/DivinPrince/quickinbox",
     },
     summary:
-      "Zimail is my open-source fork of quickinbox, a self-hosted email client by Irasubiza Divin Prince that runs entirely on Cloudflare Workers. Upstream built the mail core — sending and receiving through Resend or Cloudflare Email, threads, R2 attachments, multiple domains, and a REST API, CLI, and MCP server. My fork adds the features below on top of it.",
+      "Zimail is my open-source fork of quickinbox, a self-hosted email client by Irasubiza Divin Prince that runs entirely on Cloudflare Workers. The original project already provides the mail client itself — sending and receiving through Resend or Cloudflare Email, threads, R2 attachments, multiple domains, a REST API, CLI, and MCP server, and both the Zero and Classic interfaces. Everything listed below is what I added in my fork and is not part of the original.",
     stack: [
       "SvelteKit",
       "TypeScript",
@@ -177,12 +177,12 @@ export const projects = [
       "LiveKit",
       "Resend",
     ],
+    pointsTitle: "What I added in my fork",
     points: [
-      "Video meetings on LiveKit — short reusable join codes that guests open without an account, camera and mic preview, an optional waiting room, screen sharing, background blur or replacement, picture-in-picture, a participants list, chat, and in-browser recording.",
-      "A calendar with month and agenda views that syncs Google, Outlook, and iCloud calendars, plus public reservation pages that check every calendar for conflicts, send real calendar invitations, and can open a meeting room per booking.",
-      "Two interfaces per account: Zero, a two-pane shell with a command palette and keyboard shortcuts, and Classic, the original stacked layout.",
-      "Scheduled send driven by a Cron Trigger so it works on either mail provider with no hold-until limit, and D1 migrations the Worker applies itself so the one-click Deploy button lands on a working database.",
-      "TOTP two-factor authentication with backup codes, a recovery address, retention-based trash cleanup, recipient chips and suggestions, per-account time zones, and a Bahasa Indonesia translation.",
+      "Added video meetings on LiveKit — short reusable join codes that guests open without an account, camera and mic preview, an optional waiting room, screen sharing, background blur or replacement, picture-in-picture, a participants list, chat, and in-browser recording.",
+      "Added a calendar with month and agenda views that syncs Google, Outlook, and iCloud calendars, plus public reservation pages that check every calendar for conflicts, send real calendar invitations, and can open a meeting room per booking.",
+      "Rebuilt scheduled send on a Cron Trigger so it works on either mail provider with no hold-until limit, and made the Worker apply its own D1 migrations so the one-click Deploy button lands on a working database.",
+      "Added TOTP two-factor authentication with backup codes, a recovery address, retention-based trash cleanup, recipient chips and suggestions, per-account time zones, and a Bahasa Indonesia translation.",
     ],
     link: "https://github.com/MHibriziF/zimail",
     // Desktop web app, so the screenshots are landscape.
