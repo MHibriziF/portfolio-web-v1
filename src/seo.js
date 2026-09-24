@@ -103,10 +103,11 @@ function projectSchemas() {
     "@id": `${site.url}/#project-${project.id}`,
     name: project.name,
     alternateName: project.subtitle,
-    description: project.points[0],
+    description: project.summary ?? project.points[0],
     about: project.context,
     keywords: project.stack.join(", "),
     ...(project.link && { url: project.link }),
+    ...(project.forkOf && { isBasedOn: project.forkOf.url }),
     creator: { "@id": PERSON_ID },
     isPartOf: { "@id": WEBSITE_ID },
   }));
