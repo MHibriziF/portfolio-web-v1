@@ -10,6 +10,16 @@ import Chip from "./Chip";
 function ProjectCard({ project, index }) {
   const hasImages = project.images && project.images.length > 0;
   const flip = index % 2 === 1;
+  const desktop = project.screenshots === "desktop";
+
+  // Landscape screenshots need more room, so they only sit beside the text
+  // from lg up.
+  let layout = "";
+  if (hasImages && desktop) {
+    layout = `${flip ? "lg:flex-row-reverse" : "lg:flex-row"} lg:items-center lg:gap-10`;
+  } else if (hasImages) {
+    layout = `${flip ? "md:flex-row-reverse" : "md:flex-row"} md:items-center md:gap-10`;
+  }
 
   return (
     <article
@@ -17,14 +27,18 @@ function ProjectCard({ project, index }) {
       data-aos-duration="1000"
       className="group rounded-3xl bg-[#25252a] p-5 font-poppins ring-1 ring-white/10 transition duration-300 hover:bg-[#2e2e34] hover:ring-cyan-300/40 sm:p-7"
     >
-      <div
-        className={`flex flex-col gap-6 ${
-          hasImages ? (flip ? "md:flex-row-reverse" : "md:flex-row") : ""
-        } md:items-center md:gap-10`}
-      >
+      <div className={`flex flex-col gap-6 ${layout}`}>
         {hasImages && (
-          <div className="md:w-[13rem] md:shrink-0">
-            <Carousel images={project.images} label={project.name} />
+          <div
+            className={
+              desktop ? "lg:w-[28rem] lg:shrink-0" : "md:w-[13rem] md:shrink-0"
+            }
+          >
+            <Carousel
+              images={project.images}
+              label={project.name}
+              variant={desktop ? "desktop" : "phone"}
+            />
           </div>
         )}
 
