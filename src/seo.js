@@ -106,6 +106,7 @@ function projectSchemas() {
     description: project.points[0],
     about: project.context,
     keywords: project.stack.join(", "),
+    ...(project.link && { url: project.link }),
     creator: { "@id": PERSON_ID },
     isPartOf: { "@id": WEBSITE_ID },
   }));
