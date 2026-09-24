@@ -181,8 +181,8 @@ export const projects = [
     points: [
       "Added video meetings on LiveKit — short reusable join codes that guests open without an account, camera and mic preview, an optional waiting room, screen sharing, background blur or replacement, picture-in-picture, a participants list, chat, and in-browser recording.",
       "Added a calendar with month and agenda views that syncs Google, Outlook, and iCloud calendars, plus public reservation pages that check every calendar for conflicts, send real calendar invitations, and can open a meeting room per booking.",
-      "Rebuilt scheduled send on a Cron Trigger so it works on either mail provider with no hold-until limit, and made the Worker apply its own D1 migrations so the one-click Deploy button lands on a working database.",
-      "Added TOTP two-factor authentication with backup codes, a recovery address, retention-based trash cleanup, recipient chips and suggestions, per-account time zones, and a Bahasa Indonesia translation.",
+      "Added scheduled send driven by a Cron Trigger, so it works on either mail provider with no hold-until limit and a message can be recalled to a draft until it goes out.",
+      "Added TOTP two-factor authentication with backup codes, a recovery address, retention-based trash cleanup, recipient chips and suggestions, per-account time zones, an editable display name, and a Bahasa Indonesia translation.",
     ],
     link: "https://github.com/MHibriziF/zimail",
     // Desktop web app, so the screenshots are landscape.
