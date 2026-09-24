@@ -7,7 +7,7 @@ import ProjectLinks from "./ProjectLinks";
 /**
  * One project: screenshot carousel (when screenshots exist), tech stack, and
  * the contributions from the CV. Phone screenshots sit beside the text and
- * alternate sides; landscape web screenshots span the card above it. Either
+ * alternate sides; landscape web screenshots take the wider column beside it. Either
  * opens the full-size details view.
  */
 function ProjectCard({ project, index }) {
@@ -93,11 +93,11 @@ function ProjectCard({ project, index }) {
     >
       {desktop ? (
         <>
-          {carousel}
-          <div className="mt-7 grid gap-6 lg:grid-cols-[minmax(0,5fr)_minmax(0,7fr)] lg:gap-10">
+          <div className="grid gap-6 lg:grid-cols-[minmax(0,3fr)_minmax(0,2fr)] lg:items-center lg:gap-10">
+            {carousel}
             <div className="min-w-0">{header}</div>
-            <div className="min-w-0">{points}</div>
           </div>
+          <div className="mt-7">{points}</div>
         </>
       ) : (
         <div
