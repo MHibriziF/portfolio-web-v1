@@ -176,9 +176,14 @@ export const projects = [
       "Cloudflare R2",
       "LiveKit",
       "Resend",
+      "GitHub Actions",
+      "SonarQube",
     ],
     pointsTitle: "What I added in my fork",
     points: [
+      "Refactored the server code into a layered architecture — repository, service, and composition-root modules for each domain (auth, mail store, meetings, API tokens, push notifications) — and split the largest Svelte components into focused panels and controls.",
+      "Set up the CI/CD pipeline on GitHub Actions: type checks and tests with coverage, then a scan on my self-hosted SonarQube server whose Quality Gate blocks the merge and lists new issues on the pull request.",
+      "Connected an AI review agent (PR-Agent on Gemini) to every pull request — it writes the description, reviews the diff, and suggests improvements before merge.",
       "Added video meetings on LiveKit — short reusable join codes that guests open without an account, camera and mic preview, an optional waiting room, screen sharing, background blur or replacement, picture-in-picture, a participants list, chat, and in-browser recording.",
       "Added a calendar with month and agenda views that syncs Google, Outlook, and iCloud calendars, plus public reservation pages that check every calendar for conflicts, send real calendar invitations, and can open a meeting room per booking.",
       "Added scheduled send driven by a Cron Trigger, so it works on either mail provider with no hold-until limit and a message can be recalled to a draft until it goes out.",
@@ -314,7 +319,7 @@ export const skills = [
   },
   {
     label: "Languages & Tools",
-    items: ["Java", "Dart", "Python", "TypeScript", "PostgreSQL", "Git", "AWS"],
+    items: ["Java", "Dart", "Python", "TypeScript", "PostgreSQL", "Git", "AWS", "GitHub Actions", "SonarQube (self-hosted)"],
   },
   {
     label: "Soft Skills",
