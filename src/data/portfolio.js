@@ -154,6 +154,71 @@ export const experience = [
 
 export const projects = [
   {
+    id: "zimail",
+    name: "Zimail",
+    subtitle: "Self-hosted Email, Calendar & Video Meetings on Cloudflare Workers",
+    context: "Open-source project",
+    role: "Fork Maintainer",
+    // Zimail is a fork. The original mail client is upstream's work, so the
+    // points below only list what this fork adds on top of it.
+    forkOf: {
+      name: "quickinbox",
+      author: "Irasubiza Divin Prince",
+      url: "https://github.com/DivinPrince/quickinbox",
+    },
+    summary:
+      "Zimail is my open-source fork of quickinbox, a self-hosted email client by Irasubiza Divin Prince that runs entirely on Cloudflare Workers. Upstream built the mail core — sending and receiving through Resend or Cloudflare Email, threads, R2 attachments, multiple domains, and a REST API, CLI, and MCP server. My fork adds the features below on top of it.",
+    stack: [
+      "SvelteKit",
+      "TypeScript",
+      "Cloudflare Workers",
+      "Cloudflare D1",
+      "Cloudflare R2",
+      "LiveKit",
+      "Resend",
+    ],
+    points: [
+      "Video meetings on LiveKit — short reusable join codes that guests open without an account, camera and mic preview, an optional waiting room, screen sharing, background blur or replacement, picture-in-picture, a participants list, chat, and in-browser recording.",
+      "A calendar with month and agenda views that syncs Google, Outlook, and iCloud calendars, plus public reservation pages that check every calendar for conflicts, send real calendar invitations, and can open a meeting room per booking.",
+      "Two interfaces per account: Zero, a two-pane shell with a command palette and keyboard shortcuts, and Classic, the original stacked layout.",
+      "Scheduled send driven by a Cron Trigger so it works on either mail provider with no hold-until limit, and D1 migrations the Worker applies itself so the one-click Deploy button lands on a working database.",
+      "TOTP two-factor authentication with backup codes, a recovery address, retention-based trash cleanup, recipient chips and suggestions, per-account time zones, and a Bahasa Indonesia translation.",
+    ],
+    link: "https://github.com/MHibriziF/zimail",
+    // Desktop web app, so the screenshots are landscape.
+    screenshots: "desktop",
+    images: [
+      {
+        src: "/projects/zimail/zimail-1.webp",
+        caption: "Zero interface — two-pane inbox with inbox tabs, labels, and upcoming events",
+      },
+      {
+        src: "/projects/zimail/zimail-2.webp",
+        caption: "Classic interface — the original stacked layout",
+      },
+      {
+        src: "/projects/zimail/zimail-3.webp",
+        caption: "Video meeting on LiveKit with the chat panel open",
+      },
+      {
+        src: "/projects/zimail/zimail-4.webp",
+        caption: "Camera and mic preview before joining a meeting",
+      },
+      {
+        src: "/projects/zimail/zimail-5.webp",
+        caption: "Calendar month view",
+      },
+      {
+        src: "/projects/zimail/zimail-6.webp",
+        caption: "Public reservation page — guests pick a free slot",
+      },
+      {
+        src: "/projects/zimail/zimail-7.webp",
+        caption: "A threaded conversation in the Classic interface",
+      },
+    ],
+  },
+  {
     id: "sifpi",
     name: "SIFPI",
     subtitle: "Sistem Informasi Fasilitasi Proyek Infrastruktur",
@@ -178,37 +243,6 @@ export const projects = [
     ],
     // Client project — no public screenshots.
     images: [],
-  },
-  {
-    id: "zimail",
-    name: "Zimail",
-    subtitle: "Self-hosted Email, Calendar & Meetings on Cloudflare Workers",
-    context: "Open-source fork of quickinbox",
-    role: "Maintainer",
-    stack: [
-      "SvelteKit",
-      "TypeScript",
-      "Cloudflare Workers",
-      "Cloudflare D1",
-      "Cloudflare R2",
-      "LiveKit",
-      "Resend",
-    ],
-    points: [
-      "Maintain a self-hosted email client for your own domain that runs entirely on Cloudflare Workers — threads, attachments in R2, multiple domains and users, plus a REST API, CLI, and MCP server.",
-      "Added LiveKit video meetings with reusable join codes, a waiting room, screen sharing, background effects, and in-browser recording.",
-      "Built a calendar that syncs Google, Outlook, and iCloud feeds, with public reservation pages that send real calendar invitations and can open a meeting room per booking.",
-      "Moved scheduled send to a Cron Trigger so it works on either mail provider, and made the Worker apply its own D1 migrations so one-click deploys start with a working database.",
-      "Added TOTP two-factor authentication with backup codes, a recovery address, retention-based cleanup, and a Bahasa Indonesia translation.",
-    ],
-    link: "https://github.com/MHibriziF/zimail",
-    // Desktop web app, so the screenshots are landscape.
-    screenshots: "desktop",
-    images: [
-      "/projects/zimail/zimail-1.webp",
-      "/projects/zimail/zimail-2.webp",
-      "/projects/zimail/zimail-3.webp",
-    ],
   },
   {
     id: "inagrichat",
